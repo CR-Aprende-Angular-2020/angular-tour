@@ -1,0 +1,13 @@
+<div *ngIf="hero">
+
+    <h2>{{hero.name | uppercase}}, Detalles</h2>
+    <div><span>id: </span>{{hero.id}}</div>
+    <div>
+      <label>nombre:
+        <input [(ngModel)]="hero.name" placeholder="name"/>
+      </label>
+      <div><span>teléfono: </span>249-453-6088</div>
+      <div><span>e-mail: </span>{{hero.name | lowercase}}.gmail.com</div>
+    </div>
+  
+  </div>
