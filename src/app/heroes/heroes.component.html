@@ -24,5 +24,13 @@
   </li>
 </ul>
 
+  <mat-list>
+    <mat-list-item *ngFor="let hero of heroes">
+        <mat-icon matListIcon>person</mat-icon>
+        <h3 matLine> {{hero.name}}</h3>
+      <!--mat-icon matListIcon  matBadge="{{hero.id}}" matBadgeColor="accent">person</mat-icon>
+      <span matBadge="{{hero.id}}" matBadgeOverlap="false"><h3 matLine> {{hero.name}} - {{hero.id}}</h3></span-->
+    </mat-list-item>
+  </mat-list>
 
 </mat-card>

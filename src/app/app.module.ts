@@ -14,7 +14,7 @@ import { HeroesComponent } from './heroes/heroes.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule, MatCardModule, MatFormFieldModule, MatInputModule } from '@angular/material';
+import { MatButtonModule, MatCardModule, MatFormFieldModule, MatInputModule, MatListModule, MatIconModule, MatBadgeModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -38,7 +38,7 @@ import { MatButtonModule, MatCardModule, MatFormFieldModule, MatInputModule } fr
     ),
     
     BrowserAnimationsModule,
-    MatButtonModule, MatCardModule, MatInputModule, MatFormFieldModule
+    MatButtonModule, MatCardModule, MatFormFieldModule, MatInputModule, MatListModule, MatIconModule, MatBadgeModule
   ],
 
   providers: [    
