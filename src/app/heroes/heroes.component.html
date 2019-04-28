@@ -1,16 +1,18 @@
+<mat-card class="example-card" >
 
-<!-- Paso 5 (with link)-->
-<h2>Mis Heroes</h2>
+  <h2>Mis Heroes</h2>
 
-<div>
-    <label>Hero name:
-      <input #heroName />
-    </label>
+  <div>
+    <mat-form-field>
+      <input matInput placeholder="Nombre" #heroName />
+    </mat-form-field>
+    
     <!-- (click) passes input value to add() and then clears the input -->
-    <button (click)="add(heroName.value); heroName.value=''">
+    <button mat-fab color="primary" (click)="add(heroName.value); heroName.value=''">
       add
     </button>
   </div>
+
 
 <ul class="heroes">
   <li *ngFor="let hero of heroes">
@@ -21,3 +23,6 @@
       (click)="delete(hero)">x</button>
   </li>
 </ul>
+
+
+</mat-card>

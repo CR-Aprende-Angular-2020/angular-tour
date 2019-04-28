@@ -13,6 +13,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule, MatCardModule, MatFormFieldModule, MatInputModule } from '@angular/material';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,6 +23,7 @@ import { HeroDetailComponent } from './hero-detail/hero-detail.component';
     HeroDetailComponent,
     DashboardComponent
   ],
+
   imports: [
     BrowserModule,
     FormsModule,
@@ -31,9 +35,18 @@ import { HeroDetailComponent } from './hero-detail/hero-detail.component';
     // Remove it when a real server is ready to receive requests.
     HttpClientInMemoryWebApiModule.forRoot(
       InMemoryDataService, { dataEncapsulation: false }
-    )
+    ),
+    
+    BrowserAnimationsModule,
+    MatButtonModule, MatCardModule, MatInputModule, MatFormFieldModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+
+  providers: [    
+  ],
+
+  bootstrap: [
+    AppComponent
+  ]
+  
 })
 export class AppModule { }

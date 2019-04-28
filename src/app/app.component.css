@@ -1,0 +1,12 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.example-card {
+    max-width: 300px;
+    margin: 20px;
+    padding: 40px;
+  }
+
+.example-card a,
+.example-card button {
+    margin-right: 12px;
+}
